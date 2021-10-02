@@ -16,7 +16,8 @@ public class ZohoAppPage extends Base {
 	 */
 	
 	public CRMHomePage goToCRM() throws InterruptedException {
-		click("verifyBtn_XPATH");
+		System.out.println(isElementPresent(By.xpath("//div[@class='app-nm'][contains(.,'CRM')]")));
+		click("crmBtn_XPATH");
 		return new CRMHomePage();
 	}
 	

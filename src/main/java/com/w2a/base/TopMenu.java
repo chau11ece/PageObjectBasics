@@ -36,7 +36,7 @@ public class TopMenu {
 	}
 	
 	public AccountsPage goToAccounts() {
-		click("accountstab_CSS");
+		Base.click("accountstab_XPATH");
 		return new AccountsPage();
 	}
 	

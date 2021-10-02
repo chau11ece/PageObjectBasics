@@ -13,15 +13,16 @@ import com.w2a.utilities.Utilities;
 
 public class CreateAccountTest {
 
-	@Test(dataProviderClass=Utilities.class, dataProvider="dp")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp")
 	public void createAccountTest(Hashtable<String, String> data) throws InterruptedException {
-		
+
 		ZohoAppPage zap = new ZohoAppPage();
-		Thread.sleep(60000);
 		zap.goToCRM();
+
 		AccountsPage account = Base.menu.goToAccounts();
 		CreateAccountPage cap = account.goToCreateAccount();
-		cap.createAccountInfo("accountname");
+		cap.createAccountInfo(data.get("accountname"));
 		Assert.fail("Create account test failed");
+
 	}
 }

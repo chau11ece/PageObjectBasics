@@ -11,7 +11,7 @@ public class AccountsPage extends Base {
 	}
 	
 	public CreateAccountPage goToCreateAccount() {
-		click("createaccountBtn_CSS");
+		click("createaccountBtn_XPATH");
 		return new CreateAccountPage();
 	}
 	

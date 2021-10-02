@@ -16,11 +16,11 @@ import com.w2a.pages.crm.account.CreateAccountPage;
 public class LoginTest {
 
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		HomePage home = new HomePage();
 		LoginPage lp = home.goToSignIn();
-		ZohoAppPage zap = lp.doLogin("vanchautran11ece@gmail.com", "tranvanchauu");
+		ZohoAppPage zap = lp.doLogin("vanchautran11ece@gmail.com");
 		zap.goToCRM();
 		
 		AccountsPage account = Base.menu.goToAccounts();

@@ -8,6 +8,6 @@ public class BaseTest {
 
 	@AfterSuite
 	public void tearDown() {
-		Base.quit();
+//		Base.quit();
 	}
 }

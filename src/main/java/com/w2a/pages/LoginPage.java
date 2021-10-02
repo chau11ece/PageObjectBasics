@@ -17,11 +17,13 @@ public class LoginPage extends Base {
 	 */
 	
 	
-	public ZohoAppPage doLogin(String username, String password) {
+	public ZohoAppPage doLogin(String username) throws InterruptedException {
 //		driver.switchTo().frame("zohoiam");
 		type("email_CSS",username);
 //		type("password_CSS",password);
 		click("submitBtn_XPATH");
+		Thread.sleep(30000);
+		click("verifyBtn_XPATH");
 		
 		return new ZohoAppPage();
 	}
