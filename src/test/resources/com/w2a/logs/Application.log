@@ -1,0 +1,7 @@
+01/10/2021 17:39:30 devpinoyLogger Config file loaded!
+01/10/2021 17:39:30 devpinoyLogger OR file loaded!
+01/10/2021 17:39:40 devpinoyLogger Navigated to : https://www.zoho.com
+01/10/2021 17:39:47 devpinoyLogger Clicking on an Element : goToSignIn_CSS
+01/10/2021 17:39:48 devpinoyLogger Typing in an Element : email_CSS entered value as vanchautran11ece@gmail.com
+01/10/2021 17:39:48 devpinoyLogger Clicking on an Element : submitBtn_XPATH
+01/10/2021 17:40:48 devpinoyLogger Clicking on an Element : verifyBtn_XPATH
