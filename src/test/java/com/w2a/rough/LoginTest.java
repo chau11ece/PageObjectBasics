@@ -18,6 +18,7 @@ public class LoginTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		
+		// This is a rough package
 		HomePage home = new HomePage();
 		LoginPage lp = home.goToSignIn();
 		ZohoAppPage zap = lp.doLogin("vanchautran11ece@gmail.com");
